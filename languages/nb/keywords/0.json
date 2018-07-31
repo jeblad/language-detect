@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"name": "Rules for Bokmål",
+		"comment": "The rules are used for inflecting (transforming) the terms.",
+		"authors": [
+			"Jeblad"
+		]
+	},
+	"rules": {
+		"neutrum": {
+			"patterns": [
+				[ "^(.*?)e?$", "$1et" ]
+			]
+		},
+		"maskulinum": {
+			"patterns": [
+				[ "^(.*?)e?", "$1en" ],
+				[ "^(.*?)e?", "$1ene" ]
+			]
+		},
+		"neutrum+maskulinum": {
+			"rules": [ "neutrum", "maskulinum" ]
+		},
+		"prefix-u": {
+			"patterns": [
+				[ "^(.*?)$", "u$1" ]
+			]
+		}
+	}
+}

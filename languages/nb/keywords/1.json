@@ -1,0 +1,163 @@
+{
+	"@metadata": {
+		"name": "Genus for Bokmål",
+		"comment": "Subset for Neutrum and non-neutrum.",
+		"authors": [
+			"Jeblad"
+		]
+	},
+	"terms": {
+		"og": {},
+		"eller": {},
+		"ikke": {},
+		"en": {},
+		"et": {},
+		"ar":{
+			"patterns": [
+				[ "^.*$", "dek$" ],
+				[ "*", "hekt$" ]
+			],
+			"rules": "maskulinum"
+		},
+		"attakk": {
+			"rules": "neutrum"
+		},
+		"bacon": {
+			"rules": "neutrum"
+		},
+		"blad": {
+			"description": "botany",
+			"patterns": [
+				[ "^.*$", "bukke$" ],
+				[ "*", "fir$" ]
+			],
+			"rules": "neutrum"
+		},
+		"edder": {
+			"rules": "neutrum"
+		},
+		"eiter": {
+			"rules": "neutrum"
+		},
+		"etan": {
+			"rules": "maskulinum"
+		},
+		"fleip": {
+			"rules": "neutrum"
+		},
+		"gagn": {
+			"rules": "prefix-u"
+		},
+		"gavn": {
+			"rules": "neutrum"
+		},
+		"grid": {
+			"rules": "maskulinum"
+		},
+		"hagl": {
+			"description": "haglvær",
+			"rules": "neutrum"
+		},
+		"hysteri": {
+			"rules": "neutrum"
+		},
+		"kjevle": {
+			"rules": "neutrum"},
+		"klipp": {
+			"patterns": [
+				[ "^.*$", "hår$" ]
+			],
+			"rules": "neutrum"
+		},
+		"kosmos": {
+			"rules": "maskulinum"
+		},
+		"krus": {
+			"rules": "neutrum"
+		},
+		"kvant": {
+			"rules": "maskulinum"
+		},
+		"lav": {
+			"rules": "neutrum"
+		},
+		"lyte": {
+			"rules": "neutrum"
+		},
+		"malt": {
+			"rules": "neutrum"
+		},
+		"maskepi": {
+			"rules": "neutrum"
+		},
+		"olavsskjegg": {
+			"description": "botany",
+			"rules": "neutrum"
+		},
+		"profil": {
+			"rules": "neutrum"
+		},
+		"pryl": {
+			"rules": "neutrum"
+		},
+		"rekvisitt": {
+			"rules": "maskulinum"
+		},
+		"reseptur": {
+			"rules": "maskulinum"
+		},
+		"sanskrit": {
+			"rules": "neutrum"},
+		"siksak": {
+			"rules": "neutrum"},
+		"skabb": {
+			"rules": "neutrum"},
+		"skarngel": {
+			"rules": "neutrum"},
+		"skulk": {
+			"rules": "neutrum"},
+		"smult": {
+			"rules": "neutrum"},
+		"sti": {
+			"description": "medicin",
+			"rules": "neutrum"
+		},
+		"teach-in": {
+			"rules": "neutrum"
+		},
+		"triangel": {
+			"description": "place, instrument, geometry",
+			"rules": "neutrum"
+		},
+		"tæl": {
+			"rules": "maskulinum"
+		},
+		"tørn": {
+			"rules": "neutrum"
+		},
+		"voks": {
+			"rules": "neutrum"
+		},
+		"skivoks": {
+			"rules": "maskulinum"
+		},
+		"antibiotika": {
+			"rules": "maskulinum"
+		},
+		"spirituosa": {
+			"rules": "maskulinum"
+		},
+		"smash": {
+			"rules": "neutrum+maskulinum"
+		},
+		"snakk": {
+			"rules": "neutrum+maskulinum"
+		},
+		"stress": {
+			"rules": "neutrum+maskulinum"
+		},
+		"transparent": {
+			"rules": "neutrum+maskulinum"
+		}
+	}
+}
