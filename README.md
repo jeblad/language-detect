@@ -56,7 +56,6 @@ These statistics are bult with the affix files and keywords as patterns, with te
 
 ## Other libraries
 
-_ [Google Code: languagedetection](https://code.google.com/archive/p/language-detection/#!) (also [GitHub: 
-shuyo/language-detection](https://github.com/shuyo/language-detection))
+- [Google Code: languagedetection](https://code.google.com/archive/p/language-detection/#!) (also [GitHub: shuyo/language-detection](https://github.com/shuyo/language-detection))
 - [GitHub: optimaize/language-detector](https://github.com/optimaize/language-detector)
 - [GitHub: CLD2Owners/cld2](https://github.com/CLD2Owners/cld2)
