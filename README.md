@@ -49,7 +49,7 @@ These statistics are bult with the affix files and keywords as patterns, with te
 - Gundersen, Dag; Engh, Jan; Fjeld, Ruth Vatvedt; *Håndbok i norsk – Skriveregler, grammatikk og språklige råd fra a til å* Kunnskapsforlaget (1995) ISBN 978-82-573-0562-8
 - Bleken, Brynjulv; [Riksmål og liberalisert bokmål – en sammenlignende oversikt](http://urn.nb.no/URN:NBN:no-nb_digibok_2014020606085) Oslo (1980), ISBN 8299062802
 - Lie, Svein; [Innføring i norsk syntaks](http://urn.nb.no/URN:NBN:no-nb_digibok_2009021804107) Universitetsforlaget Oslo (2003) ISBN 978-82-15-00454-9 ([4. edition](http://urn.nb.no/URN:NBN:no-nb_digibok_2007092000090))
-- Kuldbrandstad, Lars Andreas; Språkets mønstre](http://urn.nb.no/URN:NBN:no-nb_digibok_2011082605006) Universitetsforlaget Oslo (2015) ISBN 978-82-15-00771-7 ([2. edition](http://urn.nb.no/URN:NBN:no-nb_digibok_2008082100028))
+- Kuldbrandstad, Lars Andreas; [Språkets mønstre](http://urn.nb.no/URN:NBN:no-nb_digibok_2011082605006) Universitetsforlaget Oslo (2015) ISBN 978-82-15-00771-7 ([2. edition](http://urn.nb.no/URN:NBN:no-nb_digibok_2008082100028))
 - Saeed, John I.; *Semantics* Wiley-Blackwell (2009) ISBN 978-1-4051-5639-4
 - Johnson, Keith; *Quantitative Methods in Linguistics* Blackwell Publishing (2008) ISBN 978-1-4051-4425-4
 - Jurafsky, Daniel; Martin, James H.; *Speech and Language Processing* Pearson Education (2009) ISBN 978-0-13-504196-3
