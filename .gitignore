@@ -1,0 +1,5 @@
+*~
+*.tmp
+*.vsix
+.vscode
+/node_modules
