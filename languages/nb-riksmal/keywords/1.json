@@ -1,0 +1,164 @@
+
+{
+	"@metadata": {
+		"name": "Genus for Riksmål",
+		"comment": "Subset for Neutrum and non-neutrum.",
+		"authors": [
+			"Jeblad"
+		]
+	},
+	"terms": {
+		"og": {},
+		"eller": {},
+		"ikke": {},
+		"en": {},
+		"et": {},
+		"ar":{
+			"patterns": [
+				[ "^.*$", "dek$" ],
+				[ "*", "hekt$" ]
+			],
+			"rules": "neutrum+utrum"
+		},
+		"attakk": {
+			"rules": "neutrum+utrum"
+		},
+		"bacon": {
+			"rules": "neutrum+utrum"
+		},
+		"blad": {
+			"description": "botany",
+			"patterns": [
+				[ "^.*$", "bukke$" ],
+				[ "*", "fir$" ]
+			],
+			"rules": "neutrum+utrum"
+		},
+		"edder": {
+			"rules": "neutrum+utrum"
+		},
+		"eiter": {
+			"rules": "neutrum+utrum"
+		},
+		"etan": {
+			"rules": "utrum"
+		},
+		"fleip": {
+			"rules": "neutrum+utrum"
+		},
+		"gagn": {
+			"rules": "prefix-u"
+		},
+		"gavn": {
+			"rules": "neutrum+utrum"
+		},
+		"grid": {
+			"rules": "utrum"
+		},
+		"hagl": {
+			"description": "haglvær",
+			"rules": "neutrum+utrum"
+		},
+		"hysteri": {
+			"rules": "neutrum+utrum"
+		},
+		"kjevle": {
+			"rules": "neutrum+utrum"},
+		"klipp": {
+			"patterns": [
+				[ "^.*$", "hår$" ]
+			],
+			"rules": "neutrum+utrum"
+		},
+		"kosmos": {
+			"rules": "utrum"
+		},
+		"krus": {
+			"rules": "neutrum+utrum"
+		},
+		"kvant": {
+			"rules": "utrum"
+		},
+		"lav": {
+			"rules": "neutrum+utrum"
+		},
+		"lyte": {
+			"rules": "neutrum+utrum"
+		},
+		"malt": {
+			"rules": "neutrum+utrum"
+		},
+		"maskepi": {
+			"rules": "neutrum+utrum"
+		},
+		"olavsskjegg": {
+			"description": "botany",
+			"rules": "neutrum+utrum"
+		},
+		"profil": {
+			"rules": "neutrum+utrum"
+		},
+		"pryl": {
+			"rules": "neutrum+utrum"
+		},
+		"rekvisitt": {
+			"rules": "utrum"
+		},
+		"reseptur": {
+			"rules": "utrum"
+		},
+		"sanskrit": {
+			"rules": "neutrum+utrum"},
+		"siksak": {
+			"rules": "neutrum+utrum"},
+		"skabb": {
+			"rules": "neutrum+utrum"},
+		"skarngel": {
+			"rules": "neutrum+utrum"},
+		"skulk": {
+			"rules": "neutrum+utrum"},
+		"smult": {
+			"rules": "neutrum+utrum"},
+		"sti": {
+			"description": "medicin",
+			"rules": "neutrum+utrum"
+		},
+		"teach-in": {
+			"rules": "neutrum+utrum"
+		},
+		"triangel": {
+			"description": "place, instrument, geometry",
+			"rules": "neutrum+utrum"
+		},
+		"tæl": {
+			"rules": "utrum"
+		},
+		"tørn": {
+			"rules": "neutrum+utrum"
+		},
+		"voks": {
+			"rules": "neutrum"
+		},
+		"skivoks": {
+			"rules": "utrum"
+		},
+		"antibiotika": {
+			"rules": "utrum"
+		},
+		"spirituosa": {
+			"rules": "utrum"
+		},
+		"smash": {
+			"rules": "utrum"
+		},
+		"snakk": {
+			"rules": "neutrum+utrum"
+		},
+		"stress": {
+			"rules": "neutrum+utrum"
+		},
+		"transparent": {
+			"rules": "utrum"
+		}
+	}
+}

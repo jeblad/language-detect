@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"name": "Rules for Riksmål",
+		"comment": "The rules are used for inflecting (transforming) the terms.",
+		"authors": [
+			"Jeblad"
+		]
+	},
+	"rules": {
+		"neutrum": {
+			"patterns": [
+				[ "^(.*?)e?$", "$1et" ]
+			]
+		},
+		"utrum": {
+			"patterns": [
+				[ "^(.*?)e?", "$1en" ],
+				[ "^(.*?)e?", "$1ene" ]
+			]
+		},
+		"neutrum+utrum": {
+			"rules": [ "neutrum", "utrum" ]
+		},
+		"prefix-u": {
+			"patterns": [
+				[ "^(.*?)$", "u$1" ]
+			]
+		}
+	}
+}
