@@ -53,6 +53,7 @@ These statistics are bult with the affix files and keywords as patterns, with te
 - Saeed, John I.; *Semantics* Wiley-Blackwell (2009) ISBN 978-1-4051-5639-4
 - Johnson, Keith; *Quantitative Methods in Linguistics* Blackwell Publishing (2008) ISBN 978-1-4051-4425-4
 - Jurafsky, Daniel; Martin, James H.; *Speech and Language Processing* Pearson Education (2009) ISBN 978-0-13-504196-3
+- Hastie, Trevor; Tibshirani, Robert; Friedman, Jerome; [The Elements of Statistical Learning](https://bibsys-almaprimo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=BIBSYS_ILS71505101120002201&context=L&vid=BIBSYS&search_scope=default_scope&isFrbr=true&tab=default_tab&lang=no_NO) Springer Science + Business Media (2009) ISBN 9780387848570
 
 ## Other libraries
 
