@@ -4,13 +4,13 @@ This repository defines a set of rules and statistics to identify written varian
 
 ## Norwegian written forms
 
-The core purpose of this excercise is to create statistics for detection of Norwegian language variants. There are several quite unique problems with detection of the correct variant. In particular; [Høgnorsk](https://en.wikipedia.org/wiki/Høgnorsk) is very similar to [Nynorsk](https://en.wikipedia.org/wiki/Nynorsk), and [Riksmål](https://en.wikipedia.org/wiki/Riksmål) is very similar to [Bokmål](https://en.wikipedia.org/wiki/Bokmål). The variant [Moderat Bokmål](https://no.wikipedia.org/wiki/Moderat_bokmål) is in between Bokmål and Riksmål, and is even harder to identify correctly.
+The core purpose of this exercise is to create statistics for detection of Norwegian language variants. There are several quite unique problems with detection of the correct variant. In particular; [Høgnorsk](https://en.wikipedia.org/wiki/Høgnorsk) is very similar to [Nynorsk](https://en.wikipedia.org/wiki/Nynorsk), and [Riksmål](https://en.wikipedia.org/wiki/Riksmål) is very similar to [Bokmål](https://en.wikipedia.org/wiki/Bokmål). The variant [Moderat Bokmål](https://no.wikipedia.org/wiki/Moderat_bokmål) is in between Bokmål and Riksmål, and is even harder to identify correctly.
 
 By creating a first approximation to the language variants by using coarse classification, and then creating a refined set with only the acceptable documents, sources using alternate variants can be used for training the classifier. 
 
 As a very short list of Norwegian newspapers and their use of language variants
 
-- [Aftenposten](https://en.wikipedia.org/wiki/Aftenposten) used *Riksmål* according to *Riksmålsordlisten* from 1952 up to 1989, from 1990 *Riksmål* according to definitions by Det norske akademi as of 1986, and late 90s it started moving towards *Moderat Bokmål* which became official in 2006
+- [Aftenposten](https://en.wikipedia.org/wiki/Aftenposten) used *Riksmål* according to *Riksmålsordlisten* from 1952 up to 1989, from 1990 *Riksmål* according to definitions by [Det norske akademi](https://en.wikipedia.org/wiki/Det_norske_akademi) as of 1986, and late 90s it started moving towards *Moderat Bokmål* which became official in 2006
 - [Dagbladet](https://en.wikipedia.org/wiki/Dagbladet) uses *Radikalt Bokmål*
 - [VG](https://en.wikipedia.org/wiki/Verdens_Gang) uses *Moderat Bokmål*
 
@@ -28,33 +28,33 @@ The keywords are a list of known words where the written language forms diverge.
 
 ## Usage
 
-Each statistics gives a count of the number of occurences after capitalized words are removed from the text, litteral quotes are removed, and the terms that don't pass spellchecking are removed. Spellcheckers for Bokmål and Nynorsk are pretty forgiving, so most of the language variants should pass as acceptable.
+Each statistics gives a count of the number of occurrences after capitalized words are removed from the text, literal quotes are removed, and the terms that don't pass spellchecking are removed. Spellcheckers for Bokmål and Nynorsk are pretty forgiving, so most of the language variants should pass as acceptable.
 
 Capitalized words are removed on an assumption that it is highly likely that such words are names, and thus are very noisy as they often comes from other cultural areas.
 
-Litteral quotes are removed on an assumption that it is highly likely they contain snippets of text in other languages, or spoken text which might have other properties than written text.
+Literal quotes are removed on an assumption that it is highly likely they contain snippets of text in other languages, or spoken text which might have other properties than written text.
 
-Whatever don't pass the spellchecker is removed too, on the assumption that the term seems so strange that it is unlikely they are a good source for language detection. This step is rather dangerous, as it can easilly remove what is indicative for a specific language variant.
+Whatever don't pass the spellchecker is removed too, on the assumption that the term seems so strange that it is unlikely they are a good source for language detection. This step is rather dangerous, as it can easily remove what is indicative for a specific language variant.
 
 The *prior probability of the language variant* is given in the marginals section of the statistics, while the prior probability of the predictor must be calculated over all actual variants. If the purpose is only to compare the posterior probability, ie. identification of the language variant, then the prior probability of the predictor can be dropped.
 
 ### N-gram statistics
 
-These statistics describe the differences in use of N-grams, that is the *conditinal probability for observing the N-gram given the language specific form*.
+These statistics describe the differences in use of N-grams, that is the *conditional probability for observing the N-gram given the language specific form*.
 
 These statistics are completely built by the script, with N-grams extracted from the text sources.
 
 ### Affix statistics
 
-These statistics describe the differences in use of affixes, that is the *conditinal probability for observing the affix given the language specific form*.
+These statistics describe the differences in use of affixes, that is the *conditional probability for observing the affix given the language specific form*.
 
 These statistics are built with the affix files as patterns, with terms extracted from the text sources.
 
 ### Keyword statistics
 
-These statistics describe the differences in use of keywords, that is the *conditinal probability for observing the keywords given the language specific form*.
+These statistics describe the differences in use of keywords, that is the *conditional probability for observing the keywords given the language specific form*.
 
-These statistics are bult with the affix files and keywords as patterns, with terms extracted from the text sources.
+These statistics are built with the affix files and keywords as patterns, with terms extracted from the text sources.
 
 ## Sources
 
