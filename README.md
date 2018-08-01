@@ -10,7 +10,7 @@ By creating a first approximation to the language variants by using coarse class
 
 As a very short list of Norwegian newspapers and their use of language variants
 
-- [Aftenposten](https://en.wikipedia.org/wiki/Aftenposten) used *Riksmål* up to 1990, and from 1991 it uses *Moderat Bokmål*
+- [Aftenposten](https://en.wikipedia.org/wiki/Aftenposten) used *Riksmål* according to *Riksmålsordlisten* from 1952 up to 1989, from 1990 *Riksmål* according to definitions by Det norske akademi as of 1986, and late 90s it started moving towards *Moderat Bokmål* which became official in 2006
 - [Dagbladet](https://en.wikipedia.org/wiki/Dagbladet) uses *Radikalt Bokmål*
 - [VG](https://en.wikipedia.org/wiki/Verdens_Gang) uses *Moderat Bokmål*
 
