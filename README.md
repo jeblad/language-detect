@@ -6,7 +6,7 @@ This repository defines a set of rules and statistics to identify written varian
 
 The core purpose of this exercise is to create statistics for detection of Norwegian language variants. There are several quite unique problems with detection of the correct variant. In particular; [Høgnorsk](https://en.wikipedia.org/wiki/Høgnorsk) is very similar to [Nynorsk](https://en.wikipedia.org/wiki/Nynorsk), and [Riksmål](https://en.wikipedia.org/wiki/Riksmål) is very similar to [Bokmål](https://en.wikipedia.org/wiki/Bokmål). The variant [Moderat Bokmål](https://no.wikipedia.org/wiki/Moderat_bokmål) is in between Bokmål and Riksmål, and is even harder to identify correctly.
 
-By creating a first approximation to the language variants by using coarse classification, and then creating a refined set with only the acceptable documents, sources using alternate variants can be used for training the classifier. 
+By creating a first approximation to the language variants by using coarse classification, and then creating a refined set with only the acceptable documents, sources using alternate variants can be used for training the classifier.
 
 As a very short list of Norwegian newspapers and their use of language variants
 
