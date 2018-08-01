@@ -28,7 +28,7 @@ The keywords are a list of known words where the written language forms diverge.
 
 ## Usage
 
-Each statistics gives a count of the number of occurrences after capitalized words are removed from the text, literal quotes are removed, and the terms that don't pass spellchecking are removed. Spellcheckers for Bokmål and Nynorsk are pretty forgiving, so most of the language variants should pass as acceptable.
+Each statistics gives a count of the number of occurrences after cleanup in the export script. The capitalized words are removed from the text, literal quotes are removed, and the terms that don't pass spellchecking are removed. Spellcheckers for Bokmål and Nynorsk are pretty forgiving, so most of the language variants should pass as acceptable.
 
 Capitalized words are removed on an assumption that it is highly likely that such words are names, and thus are very noisy as they often comes from other cultural areas.
 
