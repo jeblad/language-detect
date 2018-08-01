@@ -2,7 +2,19 @@
 
 This repository defines a set of rules and statistics to identify written variants of the [Norwegian language](https://en.wikipedia.org/wiki/Norwegian_language). Some of these language variants are very similar to the base variant, so special measures must be taken to identify the correct variant. A plain [naïve Bayes classifier](https://en.wikipedia.org/wiki/Naive_Bayes_classifier) with N-grams is not enough to get a high quality detection on short text fragments.
 
-In particular; [Høgnorsk](https://en.wikipedia.org/wiki/Høgnorsk) is very similar to [Nynorsk](https://en.wikipedia.org/wiki/Nynorsk), and [Riksmål](https://en.wikipedia.org/wiki/Riksmål) is very similar to [Bokmål](https://en.wikipedia.org/wiki/Bokmål). The variant [Moderat Bokmål](https://no.wikipedia.org/wiki/Moderat_bokmål) is in between Bokmål and Riksmål, and is even harder to identify correctly.
+## Norwegian written forms
+
+The core purpose of this excercise is to create statistics for detection of Norwegian language variants. There are several quite unique problems with detection of the correct variant. In particular; [Høgnorsk](https://en.wikipedia.org/wiki/Høgnorsk) is very similar to [Nynorsk](https://en.wikipedia.org/wiki/Nynorsk), and [Riksmål](https://en.wikipedia.org/wiki/Riksmål) is very similar to [Bokmål](https://en.wikipedia.org/wiki/Bokmål). The variant [Moderat Bokmål](https://no.wikipedia.org/wiki/Moderat_bokmål) is in between Bokmål and Riksmål, and is even harder to identify correctly.
+
+By creating a first approximation to the language variants by using coarse classification, and then creating a refined set with only the acceptable documents, sources using alternate variants can be used for training the classifier. 
+
+As a very short list of Norwegian newspapers and their use of language variants
+
+- [Aftenposten](https://en.wikipedia.org/wiki/Aftenposten) used *Riksmål* up to 1990, and from 1991 it uses *Moderat Bokmål*
+- [Dagbladet](https://en.wikipedia.org/wiki/Dagbladet) uses *Radikalt Bokmål*
+- [VG](https://en.wikipedia.org/wiki/Verdens_Gang) uses *Moderat Bokmål*
+
+For an alternate list, see [Wikipedia: Liste over norske aviser etter målform](https://no.wikipedia.org/wiki/Liste_over_norske_aviser_etter_m%C3%A5lform)
 
 ## Overview
 
