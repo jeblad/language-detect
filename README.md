@@ -60,7 +60,7 @@ These statistics are built with the affix files and keywords as patterns, with t
 
 #### Metadata
 
-This covers the field for *@metadata*
+This covers the fields for *@metadata*
 
 - *title* – a title for the dataset, usually a short descriptive phrase
 - *comment* – a comment about the dataset, usually a longer descriptive phrase
