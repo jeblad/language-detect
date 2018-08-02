@@ -7,38 +7,38 @@ use Git;
 arg language => (
 	isa => 'Str',
 	required => 1,
-	comment => 'language for this entry',
+	comment => 'the language for the dataset, usually an established IANA code',
 );
 
 opt minimum => (
 	isa => 'Int',
 	alias => 'm',
 	default => '10',
-	comment => 'minimum number of hits to make an entry',
+	comment => 'the minimum number of hits to enlist an entry',
 );
 
 opt license => (
 	isa => 'Str',
 	default => 'CC0-1.0',
-	comment => 'license for the generated json stucture',
+	comment => 'the license covering the generated json stucture',
 );
 
 opt generator => (
 	isa => 'Str',
 	default => 'language-detect/generate-ngrams',
-	comment => 'generator that created the json stucture',
+	comment => 'the generator that created the json stucture',
 );
 
 opt major => (
 	isa => 'Int',
 	default => '1',
-	comment => 'major version for the data structure, aka structure changes',
+	comment => 'the major version for the data structure, aka structure changes',
 );
 
 opt minor => (
 	isa => 'Int',
 	default => '0',
-	comment => 'minor version for the data structure, aka data index',
+	comment => 'the minor version for the data structure, aka data index',
 );
 
 opt title => (
@@ -55,7 +55,7 @@ opt comment => (
 
 opt author => (
 	isa => 'ArrayRef',
-	comment => 'one or more authors, could be a full name or a nick name',
+	comment => 'one or more authors for the additional information, could be a full name or a nick name',
 );
 
 opt error => (
