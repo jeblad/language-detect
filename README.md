@@ -56,6 +56,32 @@ These statistics describe the differences in use of keywords, that is the *condi
 
 These statistics are built with the affix files and keywords as patterns, with terms extracted from the text sources.
 
+### JSON files
+
+#### Metadata
+
+This covers the field for *@metadata*
+
+- *title* – a title for the dataset, usually a short descriptive phrase
+- *comment* – a comment about the dataset, usually a longer descriptive phrase
+- *license* – the license covering the generated json stucture
+- *generator* – the generator that created the json stuctur
+- *authors* – one or more authors for the additional information, could be a full name or a nick name
+
+#### N-grams
+
+This covers the fields for *ngrams*
+
+- *language* – the language for the dataset, usually an established IANA code
+- *version* – the major and minor version for the data structure, aka structure changes and data index
+- *minimum* – the minimum number of hits to enlist an entry
+- *marginals* – the overall statistics
+  - *documents* - the number of documents analyzed to create this dataset
+  - *words* – the number of words extracted from all documents in this dataset
+  - *fragments* – the number of generated fragments (N-grams) from all words in this dataset
+  - *excludes* – the number of fragments (N-grams) excluded because they are to short
+- *ngrams* – each entry is a N-gram with its conditional probability
+
 ## Sources
 
 - Gundersen, Dag; Engh, Jan; Fjeld, Ruth Vatvedt; [Håndbok i norsk – Skriveregler, grammatikk og språklige råd fra a til å](https://bibsys-almaprimo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=BIBSYS_ILS71482075340002201&context=L&vid=BIBSYS&search_scope=default_scope&tab=default_tab&lang=no_NO) Kunnskapsforlaget (1995) ISBN 978-82-573-0562-8
