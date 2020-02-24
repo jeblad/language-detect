@@ -2,8 +2,8 @@
 
 This repository defines a set of rules and statistics to identify written variants of the [Norwegian language](https://en.wikipedia.org/wiki/Norwegian_language). Some of these language variants are very similar to the base variant, so special measures must be taken to identify the correct variant. A plain [naïve Bayes classifier](https://en.wikipedia.org/wiki/Naive_Bayes_classifier) with N-grams is not enough to get a high quality detection on short text fragments.
 
-- *Note 1: The repository is for the actual experiments, and it is not intended to be production code.*
-- *Note 2: The repository does not include training data, as it is not available under a free license.*
+- **Note 1**: *The repository is for the actual experiments, and it is not intended to be production code.*
+- **Note 2**: *The repository does not include training data, as it is not available under a free license.*
 
 ## Norwegian written forms
 
