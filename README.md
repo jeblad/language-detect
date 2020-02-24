@@ -21,7 +21,7 @@ An extract of articles that contain a few marker words from Aftenposten shows th
 
 ![Trends for a few terms in the Riksmål language variant.](./trend-aft.png)
 
-**Fig 1**: *Trends for a few terms in the Riksmål language variant.*
+**Figure 1**: *Trends for a few terms in the Riksmål language variant.*
 
 The language norm from 1952 went out of use some time after [Egil Sundar](https://no.wikipedia.org/wiki/Egil_Sundar) left as editor-in-chief in the fall of 1989. In March 1993, the new [Aftenposten's spelling glossary](https://bibsys-almaprimo.hosted.exlibrisgroup.com/permalink/f/1fb9390/BIBSYS_ILS71464468560002201) was published. Considerable changes are visible in the months before the publication.
 
@@ -33,13 +33,15 @@ The language files are split into three sets for each language variant; one N-gr
 
 The N-gram statistics is a bit unusual by using a space replacement character. This set will catch some affixes, but not the long ones, and the statistics will be somewhat diffuse compared with the affix rules and the keywords. The N-grams might catch infix rules that are otherwise lost.
 
-As some affixes can be quite long in Norwegian, and also stacked, like "bilistene" (the motorists, definite plural), separate statistics is built for the affix rules to avoid very long N-grams.
+As some affixes can be quite long in Norwegian, and also stacked, like “bilistene” (“the motorists”, definite plural) and “bilkjøringen” (“to drive a car”, definite singular), separate statistics is built for the affix rules to avoid very long N-grams.
 
 The keywords are a list of known words where the written language forms diverge. This is quite interesting as some words are quite good markers, especially for older texts. The keywords have rules to control inflection
 
 ## Usage
 
-Each statistics gives a count of the number of occurrences after cleanup in the export script. The capitalized words are removed from the text, literal quotes are removed, and the terms that don't pass spellchecking are removed. Spellcheckers for Bokmål and Nynorsk are pretty forgiving, so most of the language variants should pass as acceptable.
+Each statistic gives a count of the number of occurrences after cleanup in the export script. The capitalized words are removed from the text, literal quotes are removed, and the terms that don't pass spellchecking are removed. Spellcheckers for Bokmål and Nynorsk are pretty forgiving, so most of the language variants should pass as acceptable.
+
+- **Note 3**: *Filtering by spellchecking will remove a lot of words that is not valid, and make the determination a lot harder.*
 
 Capitalized words are removed on an assumption that it is highly likely that such words are names, and thus are very noisy as they often comes from other cultural areas.
 
