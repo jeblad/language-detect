@@ -19,8 +19,10 @@ A very short list of Norwegian newspapers and their use of language variants
 
 An extract of articles that contain a few marker words from Aftenposten shows the change over time. In this case one group of marker words are “efter” (“after”), “nu” (“now”), “igår” (“yesterday”), “idag” (“today”), and “imorgen” (“tomorrow”). These words' comes from the language norm for Riksmål from 1952, and are shown in blue. The other group of marker words are “etter” (“after”), “nå” (“now”), “i går” (“yesterday”), “i dag” (“today”), and “i morgen” (“tomorrow”). These words' comes from the language norm for Riksmål from 1986, and are shown in red.
 
+<p align="center">
 ![Trends for a few terms in the Riksmål language variant.](./trend-aft.png)
 **Fig 1**: *Trends for a few terms in the Riksmål language variant.*
+</p>
 
 The language norm from 1952 went out of use some time after [Egil Sundar](https://no.wikipedia.org/wiki/Egil_Sundar) left as editor-in-chief in the fall of 1989. In March 1993, the new [Aftenposten's spelling glossary](https://bibsys-almaprimo.hosted.exlibrisgroup.com/permalink/f/1fb9390/BIBSYS_ILS71464468560002201) was published. Considerable changes are visible in the months before the publication.
 
