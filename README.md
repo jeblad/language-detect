@@ -13,9 +13,9 @@ It is possible to create a first approximation to the language variants by using
 
 A very short list of Norwegian newspapers and their use of language variants
 
-- [Aftenposten](https://en.wikipedia.org/wiki/Aftenposten) used *Riksmål* according to *Riksmålsordlisten* from 1952 up to 1989, from 1990 *Riksmål* according to definitions by [Det norske akademi](https://en.wikipedia.org/wiki/Det_norske_akademi) as of 1986, from 1992 started to transition to an internal thesaurus published in March 1993, and late 90s it started moving towards *Moderat Bokmål* which became official in 2006
-- [Dagbladet](https://en.wikipedia.org/wiki/Dagbladet) uses *Radikalt Bokmål*
-- [VG](https://en.wikipedia.org/wiki/Verdens_Gang) uses *Moderat Bokmål*
+- [Aftenposten](https://en.wikipedia.org/wiki/Aftenposten) used Riksmål according to [Riksmålsordlisten](https://en.wikipedia.org/wiki/Riksm%C3%A5lsordlisten) from 1952 up to 1989, from 1990 Riksmål according to definitions by [Det norske akademi](https://en.wikipedia.org/wiki/Det_norske_akademi) as of 1986, from 1992 started to transition to an [internal thesaurus](https://bibsys-almaprimo.hosted.exlibrisgroup.com/permalink/f/1fb9390/BIBSYS_ILS71464468560002201) published in March 1993, and late 90s it started moving towards [Moderat Bokmål](https://no.wikipedia.org/wiki/Moderat_bokm%C3%A5l) ([Store norske ordbok](https://bibsys-almaprimo.hosted.exlibrisgroup.com/permalink/f/1fb9390/BIBSYS_ILS71491256310002201)) which became official in 2006
+- [Dagbladet](https://en.wikipedia.org/wiki/Dagbladet) uses Radikalt Bokmål
+- [VG](https://en.wikipedia.org/wiki/Verdens_Gang) uses Moderat Bokmål
 
 An extract of articles that contain a few marker words from Aftenposten shows the change over time. In this case one group of marker words are “efter” (“after”), “nu” (“now”), “igår” (“yesterday”), “idag” (“today”), and “imorgen” (“tomorrow”). These words' comes from the language norm for Riksmål from 1952, and are shown in blue. The other group of marker words are “etter” (“after”), “nå” (“now”), “i går” (“yesterday”), “i dag” (“today”), and “i morgen” (“tomorrow”). These words' comes from the language norm for Riksmål from 1986, and are shown in red.
 
@@ -33,41 +33,49 @@ The language files are split into three sets for each language variant; one N-gr
 
 The N-gram statistics is a bit unusual by using a space replacement character. This set will catch some affixes, but not the long ones, and the statistics will be somewhat diffuse compared with the affix rules and the keywords. The N-grams might catch infix rules that are otherwise lost.
 
+- **Note 3**: *This is tested, and works as expected.*
+
 As some affixes can be quite long in Norwegian, and also stacked, like “bilistene” (“the motorists”, definite plural) and “bilkjøringen” (“to drive a car”, definite singular), separate statistics is built for the affix rules to avoid very long N-grams.
 
-The keywords are a list of known words where the written language forms diverge. This is quite interesting as some words are quite good markers, especially for older texts. The keywords have rules to control inflection
+- **Note 4**: *This is only partially tested, and there  are no conclusions whether this works better or worse.*
+
+The keywords are a list of known words where the written language forms diverge. This is quite interesting as some words are quite good markers, especially for older texts. The keywords have rules to control inflection.
+
+- **Note 5**: *This is not tested.*
 
 ## Usage
 
-Each statistic gives a count of the number of occurrences after cleanup in the export script. The capitalized words are removed from the text, literal quotes are removed, and the terms that don't pass spellchecking are removed. Spellcheckers for Bokmål and Nynorsk are pretty forgiving, so most of the language variants should pass as acceptable.
+Each statistic gives a count of the number of occurrences after cleanup in the export script. The capitalized words are removed from the text, literal quotes are removed, and the terms that don't pass spellchecking are removed. Spellcheckers for Bokmål and Nynorsk are pretty forgiving, so most of the language variants should pass as acceptable. That is a spellchecker for Bokmål will mostly accept Riksmål, and a spellchecker for Nynorsk will mostly accept Høgmål.
 
-- **Note 3**: *Filtering by spellchecking will remove a lot of words that is not valid, and make the determination a lot harder.*
-
-Capitalized words are removed on an assumption that it is highly likely that such words are names, and thus are very noisy as they often comes from other cultural areas.
+Capitalized words are removed on an assumption that it is highly likely that such words are names, and thus are noise as they often comes from other cultural areas.
 
 Literal quotes are removed on an assumption that it is highly likely they contain snippets of text in other languages, or spoken text which might have other properties than written text.
 
 Whatever don't pass the spellchecker is removed too, on the assumption that the term seems so strange that it is unlikely they are a good source for language detection. This step is rather dangerous, as it can easily remove what is indicative for a specific language variant.
 
-The *prior probability of the language variant* is given in the marginals section of the statistics, while the prior probability of the predictor must be calculated over all actual variants. If the purpose is only to compare the posterior probability, ie. identification of the language variant, then the prior probability of the predictor can be dropped.
+The *prior probability of the language variant* is given in the marginals section of the statistics, while the prior probability of the predictor must be calculated over all actual variants. If the purpose is only to compare the posterior probability, i.e. identification of the language variant, then the prior probability of the predictor can be dropped.
 
 ### N-gram statistics
 
-These statistics describe the differences in use of N-grams, that is the *conditional probability for observing the N-gram given the language specific form*.
+These statistics describe the differences in use of N-grams, that is the *conditional probability for observing the N-gram given the language variant*.
 
 N-grams with *N* equal to 1 are only generated for Bokmål and Nynorsk, as the variants have non-significant differences. N-grams with *N* equal to 2, 3, and 4, are generated for various variants. Increasing *N* gives increased differences during classification, but also increased data size aka size of JSON files. With increasing *N* there will also be an increasing lack of evidence, thus it will be a drop in differences during classification.
 
-These statistics are completely built by the script, with N-grams extracted from the source texts.
+These statistics are completely built by the script, with N-grams extracted from the (not included) training data.
 
 ### Affix statistics
 
-These statistics describe the differences in use of affixes, that is the *conditional probability for observing the affix given the language specific form*.
+These statistics describe the differences in use of affixes, that is the *conditional probability for observing the affix given the language variant*.
+
+There are at least two different possible implementations of affix statistics; either handling affixes in a separate structure or in the same structure as the N-grams.
 
 These statistics are built with the affix files as patterns, with terms extracted from the source texts.
 
 ### Keyword statistics
 
-These statistics describe the differences in use of keywords, that is the *conditional probability for observing the keywords given the language specific form*.
+These statistics describe the differences in use of keywords, that is the *conditional probability for observing the keywords given the language variant*.
+
+Again there are at least two different possible implementations of keyword statistics; either handling keywords in a separate structure or in the same structure as the N-grams.
 
 These statistics are built with the affix files and keywords as patterns, with terms extracted from the source texts.
 
@@ -77,24 +85,24 @@ These statistics are built with the affix files and keywords as patterns, with t
 
 This covers the fields for *@metadata*
 
-- *title* – a title for the dataset, usually a short descriptive phrase
-- *comment* – a comment about the dataset, usually a longer descriptive phrase
-- *license* – the license covering the generated json stucture
-- *generator* – the generator that created the json stuctur
+- *title* – a title for the data set, usually a short descriptive phrase
+- *comment* – a comment about the data set, usually a longer descriptive phrase
+- *license* – the license covering the generated json structure
+- *generator* – the generator that created the json stucture
 - *authors* – one or more authors for the additional information, could be a full name or a nick name
 
 #### N-grams
 
 This covers the fields for *ngrams*
 
-- *language* – the language for the dataset, usually an established IANA code
+- *language* – the language for the data set, usually an established IANA code
 - *version* – the major and minor version for the data structure, aka structure changes and data index
 - *minimum* – the minimum number of hits to enlist an entry
 - *size* – the actual size for the N-grams
 - *marginals* – the overall statistics
-  - *documents* - the number of documents analyzed to create this dataset
-  - *words* – the number of words extracted from all documents in this dataset
-  - *fragments* – the number of generated fragments (N-grams) from all words in this dataset
+  - *documents* - the number of documents analyzed to create this data set
+  - *words* – the number of words extracted from all documents in this data set
+  - *fragments* – the number of generated fragments (N-grams) from all words in this data set
   - *excludes* – the number of fragments (N-grams) excluded because they are to short
 - *ngrams* – each entry is a N-gram with its conditional probability
 
@@ -114,3 +122,4 @@ This covers the fields for *ngrams*
 - [Google Code: languagedetection](https://code.google.com/archive/p/language-detection/#!) (also [GitHub: shuyo/language-detection](https://github.com/shuyo/language-detection))
 - [GitHub: optimaize/language-detector](https://github.com/optimaize/language-detector)
 - [GitHub: CLD2Owners/cld2](https://github.com/CLD2Owners/cld2)
+- [Github: wooorm/franc](https://github.com/wooorm/franc) (also [Github: kapsteur/franco](https://github.com/kapsteur/franco)
