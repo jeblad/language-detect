@@ -122,4 +122,4 @@ This covers the fields for *ngrams*
 - [Google Code: languagedetection](https://code.google.com/archive/p/language-detection/#!) (also [GitHub: shuyo/language-detection](https://github.com/shuyo/language-detection))
 - [GitHub: optimaize/language-detector](https://github.com/optimaize/language-detector)
 - [GitHub: CLD2Owners/cld2](https://github.com/CLD2Owners/cld2)
-- [Github: wooorm/franc](https://github.com/wooorm/franc) (also [Github: kapsteur/franco](https://github.com/kapsteur/franco)
+- [Github: wooorm/franc](https://github.com/wooorm/franc) (also [Github: kapsteur/franco](https://github.com/kapsteur/franco))
