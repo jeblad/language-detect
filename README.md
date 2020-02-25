@@ -23,7 +23,7 @@ An extract of articles that contain a few marker words from Aftenposten shows th
 
 **Figure 1**: *Trends for a few terms in the Riksmål language variant.*
 
-The language norm from 1952 went out of use some time after [Egil Sundar](https://no.wikipedia.org/wiki/Egil_Sundar) left as editor-in-chief in the fall of 1989. In March 1993, the new [Aftenposten's spelling glossary](https://bibsys-almaprimo.hosted.exlibrisgroup.com/permalink/f/1fb9390/BIBSYS_ILS71464468560002201) was published. Considerable changes are visible in the months before the publication.
+The language norm from 1952 went out of use some time after the editor-in-chief left in the fall of 1989. In March 1993, the new [Aftenposten's spelling glossary](https://bibsys-almaprimo.hosted.exlibrisgroup.com/permalink/f/1fb9390/BIBSYS_ILS71464468560002201) was published. Considerable changes are visible in the months before the publication.
 
 For an alternate list, see [Wikipedia: Liste over norske aviser etter målform](https://no.wikipedia.org/wiki/Liste_over_norske_aviser_etter_m%C3%A5lform)
 
