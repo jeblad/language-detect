@@ -5,6 +5,8 @@ This repository defines a set of rules and statistics to identify written varian
 - **Note 1**: *The repository is for the actual experiments, and it is not intended to be production code.*
 - **Note 2**: *The repository does not include training data, as it is not available under a free license.*
 
+Alternate approaches not investigated here of the same problem are [maximum likelihood estimation](https://en.wikipedia.org/wiki/Maximum_likelihood_estimation) (MLE) and [siamese neural network](https://en.wikipedia.org/wiki/Siamese_neural_network). One common method for MLE is to use found trigrams over a subset for a specific languages, and then normalize over a set of found trigrams over a union of subsets for all languages. One method for siamese networks is to use the trigrams as embeddings as is, or they can be transformed into new embeddings. An experimental approach is to use a [recurrent neural network](https://en.wikipedia.org/wiki/Recurrent_neural_network) as the first stage.
+
 ## Norwegian written forms
 
 The core purpose of the experiments are to create statistics for detection of Norwegian language variants. There are several unique problems with this, as the variants are quite close to each other in spelling. In particular; [Høgnorsk](https://en.wikipedia.org/wiki/Høgnorsk) is similar to [Nynorsk](https://en.wikipedia.org/wiki/Nynorsk), and [Riksmål](https://en.wikipedia.org/wiki/Riksmål) is very similar to [Bokmål](https://en.wikipedia.org/wiki/Bokmål). The variant [Moderat Bokmål](https://no.wikipedia.org/wiki/Moderat_bokmål) is in between Bokmål and Riksmål, and is even harder to identify correctly.
