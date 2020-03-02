@@ -69,6 +69,8 @@ These statistics are completely built by the script, with N-grams extracted from
 
 These statistics describe the differences in use of affixes, that is the *conditional probability for observing the affix given the language variant*.
 
+Affixes are extracted from the term structure, that is after the phrase structure is split into terms.
+
 There are at least two different possible implementations of affix statistics; either handling affixes in a separate structure or in the same structure as the N-grams.
 
 These statistics are built with the affix files as patterns, with terms extracted from the source texts.
@@ -77,9 +79,11 @@ These statistics are built with the affix files as patterns, with terms extracte
 
 These statistics describe the differences in use of keywords, that is the *conditional probability for observing the keywords given the language variant*.
 
+Keywords are extracted from the phrase structure, that is after the text is split into sentences and before it is split into terms.
+
 Again there are at least two different possible implementations of keyword statistics; either handling keywords in a separate structure or in the same structure as the N-grams.
 
-These statistics are built with the affix files and keywords as patterns, with terms extracted from the source texts.
+These statistics are built with the keyword files as patterns, with terms extracted from the source texts.
 
 ### JSON files
 
@@ -107,6 +111,10 @@ This covers the fields for *ngrams*
   - *fragments* – the number of generated fragments (N-grams) from all words in this data set
   - *excludes* – the number of fragments (N-grams) excluded because they are to short
 - *ngrams* – each entry is a N-gram with its conditional probability
+
+## Examples
+
+The file [EXAMPLES](./EXAMPLES.md) is at present not checked into the repository.
 
 ## Sources
 
